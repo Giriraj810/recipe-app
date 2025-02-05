@@ -1,0 +1,429 @@
+.main-title {
+  font-weight: 800;
+}
+#root {
+  width: 100%;
+}
+
+/* Font Size Utilities */
+.fsize-2 {
+  font-size: 2px;
+}
+.fsize-4 {
+  font-size: 4px;
+}
+.fsize-6 {
+  font-size: 6px;
+}
+.fsize-8 {
+  font-size: 8px;
+}
+.fsize-10 {
+  font-size: 10px;
+}
+.fsize-12 {
+  font-size: 12px;
+}
+.fsize-14 {
+  font-size: 14px;
+}
+.fsize-16 {
+  font-size: 16px;
+}
+.fsize-18 {
+  font-size: 18px;
+}
+.fsize-20 {
+  font-size: 20px;
+}
+.fsize-22 {
+  font-size: 22px;
+}
+.fsize-24 {
+  font-size: 24px;
+}
+.fsize-26 {
+  font-size: 26px;
+}
+.fsize-28 {
+  font-size: 28px;
+}
+.fsize-30 {
+  font-size: 30px;
+}
+.fsize-32 {
+  font-size: 32px;
+}
+.fsize-42 {
+  font-size: 42px;
+}
+
+/* Named Color Utilities */
+.color-primary {
+  color: #007bff;
+} /* Primary (Blue) */
+.color-secondary {
+  color: #6c757d;
+} /* Secondary (Gray) */
+.color-success {
+  color: #28a745;
+} /* Success (Green) */
+.color-danger {
+  color: #dc3545;
+} /* Danger (Red) */
+.color-warning {
+  color: #ffc107;
+} /* Warning (Yellow) */
+.color-info {
+  color: #17a2b8;
+} /* Info (Teal) */
+.color-light {
+  color: #f8f9fa;
+} /* Light (Whiteish) */
+.color-dark {
+  color: #343a40;
+} /* Dark (Blackish) */
+
+.color-orange {
+  color: #ff5733;
+} /* Orange */
+.color-lime-green {
+  color: #33ff57;
+} /* Lime Green */
+.color-purple {
+  color: #5733ff;
+} /* Purple */
+.color-sky-blue {
+  color: #33c4ff;
+} /* Sky Blue */
+.color-pink {
+  color: #ff33a1;
+} /* Pink */
+.color-yellow {
+  color: #ffd633;
+} /* Yellow */
+.color-aqua {
+  color: #33ffd6;
+} /* Aqua */
+.color-coral {
+  color: #ff8c33;
+} /* Coral */
+.color-violet {
+  color: #8c33ff;
+} /* Violet */
+.color-bright-green {
+  color: #a1ff33;
+} /* Bright Green */
+
+.color-red {
+  color: #ff3333;
+} /* Red */
+.color-green {
+  color: #33ff33;
+} /* Green */
+.color-blue {
+  color: #3333ff;
+} /* Blue */
+.color-salmon {
+  color: #ff6633;
+} /* Salmon */
+.color-royal-blue {
+  color: #3366ff;
+} /* Royal Blue */
+.color-magenta {
+  color: #ff33ff;
+} /* Magenta */
+.color-cyan {
+  color: #33ffff;
+} /* Cyan */
+.color-blackish-gray {
+  color: #333333;
+} /* Blackish Gray */
+.color-mid-gray {
+  color: #666666;
+} /* Mid Gray */
+.color-light-gray {
+  color: #999999;
+} /* Light Gray */
+
+.color-light-purple {
+  color: #b833ff;
+} /* Light Purple */
+.color-mint-green {
+  color: #33ffb8;
+} /* Mint Green */
+.color-amber {
+  color: #ffaa33;
+} /* Amber */
+.color-tangerine {
+  color: #ff7733;
+} /* Tangerine */
+.color-orchid {
+  color: #cc33ff;
+} /* Orchid Purple */
+.color-teal {
+  color: #00cc99;
+} /* Teal */
+.color-lavender {
+  color: #9966cc;
+} /* Lavender */
+.color-soft-pink {
+  color: #ff9999;
+} /* Soft Pink */
+.color-peach {
+  color: #ffcc66;
+} /* Peach */
+.color-baby-blue {
+  color: #cce7ff;
+} /* Baby Blue */
+
+.hover-image {
+  position: relative;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  margin-inline: auto;
+  border-radius: 16px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hover-image img {
+  width: max-content;
+  height: max-content;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hover-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hover-image:hover img {
+  transform: scale(1.1);
+}
+
+.hover-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background: linear-gradient(45deg, #e7d4e4, #dfdddd);
+  z-index: 1;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0.15;
+}
+
+.hover-image:hover:after {
+  opacity: 0.2;
+}
+
+/* shimer */
+
+.shimmer-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: #f6f7f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f6f7f8 25%, #eaeaea 50%, #f6f7f8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+/* 🔹 Search Container Styling */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 🔹 Form Styling */
+.search-form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* 🔹 Input Field Styling */
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+/* 🔹 Focus Effect */
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* 🔹 Search Button Styling */
+.search-button {
+  position: absolute;
+  right: 10px;
+  top: 15%;
+  transform: translateY(-50%);
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px #55d2dbb3;
+}
+
+/* 🔹 Hover Effect */
+.search-button:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px #55d2dbb3;
+  animation: pulse 1s infinite;
+}
+
+/* 🔹 Click Effect */
+.search-button:active {
+  transform: translateY(-50%) scale(0.95);
+  box-shadow: 0 3px 8px #55d2dbb3;
+}
+
+/* 🔹 Glow Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 75, 43, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 75, 43, 0.6);
+  }
+}
+
+.dialog-title {
+  margin: 0;
+  padding: 16px;
+  position: relative;
+  background-color: #f5f5f5;
+  color: #00796b;
+}
+
+.dialog-content {
+  padding: 24px;
+}
+
+.dialog-actions {
+  padding: 16px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: gray;
+}
+
+.button {
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: none;
+}
+.filter-set {
+  display: flex !important;
+}
+.filter-sub,.filter-sub2 {
+  display: flex;
+}
+/* 🔹 Medium Screens (992px - 1199px) */
+@media (max-width: 1199px) {
+  body {
+    font-size: 17px;
+  }
+  .fsize-42 {
+    font-size: 38px;
+  }
+}
+
+/* 🔹 Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 850px) {
+  .filter-set {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0  !important;
+    align-items: end !important;
+    justify-content: end !important;
+    text-align: center !important;
+    margin-bottom: 10px;
+    }
+  .filter-sub {
+    display: flex;
+justify-content: center !important;  }
+}
+.filter-sub2 {
+  display: flex;
+  justify-content: center !important;  
+
+}
+/* 🔹 Small Tablets & Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* 🔹 Small Phones (up to 575px) */
+@media (max-width: 575px) {
+  .fsize-42 {
+    font-size: 24px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .mob-view {
+    display: block !important;
+  }
+  .filter-sub {
+    display: block;
+justify-content: center !important;  
+}
+.filter-sub2 {
+  display: block;
+  justify-content: center !important;  
+
+}
+.favorite {
+  width: 100% !important;
+}
+}
